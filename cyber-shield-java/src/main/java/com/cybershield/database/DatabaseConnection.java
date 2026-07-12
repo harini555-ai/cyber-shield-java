@@ -13,7 +13,7 @@ public class DatabaseConnection {
             "DB_URL", "db.url",
             "jdbc:mysql://localhost:3306/cyber_shield?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC");
     private static final String USER = resolveConfig("DB_USER", "db.user", "root");
-    private static final String PASSWORD = resolveConfig("DB_PASSWORD", "db.password", "Haru#123#"); // Default root password, adjustable via env vars, -D system properties, or below
+    private static final String PASSWORD = resolveConfig("DB_PASSWORD", "db.password",  "password"); // Default root password, adjustable via env vars, -D system properties, or below
 
     /**
      * Resolves a config value, checking (in order): environment variable, JVM system property, then the default.
